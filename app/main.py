@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/")
 async def read_main():
-    return {"msg": "THANK YOU EVERYONE"}
+    return {"msg": "THANK YOU ALL"}
