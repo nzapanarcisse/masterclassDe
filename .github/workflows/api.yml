@@ -35,7 +35,6 @@ jobs:
           docker login -u ${{ secrets.DOCKER_USERNAME  }} -p ${{ secrets.DOCKER_PASSWORD  }}
           docker push datascientestuser/fast-api:${GITHUB_SHA}
           docker push datascientestuser/fast-api:latest
-
   deploy:
     needs: build-push-container
     name: deploy
@@ -58,3 +57,4 @@ jobs:
             curl localhost:9000
             ls 
             sudo docker images
+
