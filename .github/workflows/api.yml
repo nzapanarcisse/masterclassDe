@@ -57,4 +57,3 @@ jobs:
             curl localhost:9000
             ls 
             sudo docker images
-
